@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="문제와 결과를 연결하는 서비스 기획자, 백준의 포트폴리오">
+  <title>백준 | 서비스 기획자</title>
+
+  <!-- Pretendard 폰트 CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css">
+
+  <!-- Font Awesome 아이콘 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- 스타일시트 연결 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== 상단 고정 내비게이션 ===== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+      <!-- 왼쪽: 이름 로고 -->
+      <a href="#hero" class="navbar__logo">백준</a>
+
+      <!-- 오른쪽: 섹션 링크 + 다크모드 토글 -->
+      <nav class="navbar__nav" id="navMenu">
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#education" class="navbar__link">Education</a>
+        <a href="#experiences" class="navbar__link">Experiences</a>
+        <a href="#skills" class="navbar__link">Skills</a>
+        <a href="#language" class="navbar__link">Language</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <!-- 다크모드 토글 버튼 -->
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="다크모드 전환">
+          <i class="fa-solid fa-sun theme-toggle__icon theme-toggle__icon--light"></i>
+          <i class="fa-solid fa-moon theme-toggle__icon theme-toggle__icon--dark"></i>
+        </button>
+
+        <!-- 모바일 메뉴 버튼 -->
+        <button type="button" class="navbar__menu-btn" id="menuToggle" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== 히어로 섹션 ===== -->
+    <section class="hero" id="hero">
+      <!-- 배경 영문 구절 -->
+      <div class="hero__bg-text" aria-hidden="true">
+        <span>Problem Solver</span>
+        <span class="hero__bg-dot">•</span>
+        <span>Value Creator</span>
+      </div>
+
+      <div class="hero__content container">
+        <p class="hero__label">Service Planner</p>
+        <h1 class="hero__name">백준</h1>
+        <p class="hero__headline">문제와 결과를 연결하는 서비스 기획자</p>
+        <p class="hero__intro">
+          시장 현장에서 수집한 데이터를 비즈니스 모델로 전환하고, 1,000만 원 계약을 성사시킨 경험을 바탕으로<br>
+          오늘도 '불가능한 것'들을 '가능'으로 만들고 있습니다.
+        </p>
+      </div>
+
+      <!-- 스크롤 유도 -->
+      <a href="#about" class="hero__scroll" aria-label="About 섹션으로 이동">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ===== About 섹션 ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">About</span>
+          <h2 class="section__title">저를 소개합니다</h2>
+        </div>
+
+        <div class="about-card reveal">
+          <p>대학 시절부터 전통시장의 현장 데이터를 분석하고 디지털 서비스로 전환하는 실험에 몰입했습니다.</p>
+          <p>창업학회 <em>이더스퓨처</em>에서 식용곤충 그래놀라를 텀블벅으로 173% 펀딩 성공시키며, "소비자 관점에서 문제를 정의하고 솔루션을 설계한다"는 원칙을 체득했습니다.</p>
+          <p>현재 <strong>SQL</strong>·<strong>데이터 분석</strong> 역량을 바탕으로 대학생·사회초년생이 겪는 보험 UX 문제를 진단하고, 실질적인 개선안을 도출해 프로덕트의 핵심 가치를 끌어올리는 역할을 수행하고 있습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Education 섹션 (타임라인) ===== -->
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Education</span>
+          <h2 class="section__title">학업 배경</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- 타임라인 항목 1 -->
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__badge">2017.03 – 2020.02</span>
+              <h3 class="timeline__org">상문고등학교</h3>
+              <p class="timeline__desc">기초 학문·리더십 기반 형성</p>
+              <ul class="timeline__bullets">
+                <li>학생 회장</li>
+                <li>국제 교류 프로그램 참여</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 타임라인 항목 2 -->
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__badge">2021.03 – 2026.02</span>
+              <h3 class="timeline__org">한국외국어대학교(서울)</h3>
+              <p class="timeline__desc">전공: 중국언어문화 / 이중전공: 경영학 — 언어·문화와 경영 전략을 융합</p>
+              <ul class="timeline__bullets">
+                <li>중국어 고급 구사</li>
+                <li>경영 전공 이수</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 타임라인 항목 3 -->
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__badge">2026.03 (예정)</span>
+              <h3 class="timeline__org">성균관대학교 – 경영학과 (편입)</h3>
+              <p class="timeline__desc">실무 중심 경영 교육</p>
+              <ul class="timeline__bullets">
+                <li>편입 학점 3.8/4.5</li>
+                <li>인턴십 연계 교과 이수</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experiences 섹션 (카드 그리드) ===== -->
+    <section class="section" id="experiences">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Experiences</span>
+          <h2 class="section__title">핵심 프로젝트</h2>
+        </div>
+
+        <div class="card-grid">
+          <!-- 경험 카드 1 -->
+          <article class="exp-card reveal">
+            <h3 class="exp-card__title">스타라이트 – AI 사업계획서 플랫폼</h3>
+            <p class="exp-card__meta">2025.08 – 2026.09</p>
+            <ul class="exp-card__bullets">
+              <li>서울시 기획봉사단 3기 진행 중, 50개 스타트업 서류 자동 검토 구현</li>
+              <li>비용 구조를 83% 효율화, 연간 운영비 4억 절감 효과</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">AI</span>
+              <span class="tag">사업계획서</span>
+              <span class="tag">비용절감</span>
+              <span class="tag">PM</span>
+            </div>
+          </article>
+
+          <!-- 경험 카드 2 -->
+          <article class="exp-card reveal">
+            <h3 class="exp-card__title">통인시장 플랫폼</h3>
+            <p class="exp-card__meta">2025.02 – 2026.02 · 개인사업자 대표</p>
+            <ul class="exp-card__bullets">
+              <li>통인시장과 1,000만 원 MOU 체결</li>
+              <li>현장 데이터 기반 B2G 모델 설계, 계약 체결률 90% 달성</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">전통시장</span>
+              <span class="tag">B2G</span>
+              <span class="tag">계약</span>
+              <span class="tag">데이터분석</span>
+            </div>
+          </article>
+
+          <!-- 경험 카드 3 -->
+          <article class="exp-card reveal">
+            <h3 class="exp-card__title">식용곤충 그래놀라 (이더스퓨처)</h3>
+            <p class="exp-card__meta">2024.08 – 2025.01</p>
+            <ul class="exp-card__bullets">
+              <li>농촌진흥청 협력, 제품 개발</li>
+              <li>텀블벅 173% 펀딩 성공, 초기 고객 1,200명 확보</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">친환경</span>
+              <span class="tag">펀딩</span>
+              <span class="tag">제품기획</span>
+              <span class="tag">마케팅</span>
+            </div>
+          </article>
+
+          <!-- 경험 카드 4 -->
+          <article class="exp-card reveal">
+            <h3 class="exp-card__title">스위프 웹 – 모임코스 추천 AI</h3>
+            <p class="exp-card__meta">2025.06 – 2025.08</p>
+            <ul class="exp-card__bullets">
+              <li>AI 기반 코스 추천 알고리즘 설계</li>
+              <li>사용자 만족도 4.7/5, 재방문율 35% 상승</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">AI추천</span>
+              <span class="tag">UX</span>
+              <span class="tag">알고리즘</span>
+            </div>
+          </article>
+
+          <!-- 경험 카드 5 -->
+          <article class="exp-card reveal">
+            <h3 class="exp-card__title">현대엔지니어링 – 하이퍼로컬 리츠·상권 투자 인사이트 플랫폼</h3>
+            <p class="exp-card__meta">2026.04 – 2026.05 · 전략 기획 담당</p>
+            <ul class="exp-card__bullets">
+              <li>투자 ROI 12% 향상 모델 제시</li>
+              <li>산학 연계 프로젝트 대상 수상</li>
+            </ul>
+            <div class="tag-group">
+              <span class="tag">하이퍼로컬</span>
+              <span class="tag">전략기획</span>
+              <span class="tag">투자분석</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills 섹션 ===== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Skills</span>
+          <h2 class="section__title">역량</h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 스킬 카테고리: Technical -->
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">Technical</h3>
+            <div class="tag-group">
+              <span class="tag">SQL</span>
+              <span class="tag">데이터 분석</span>
+              <span class="tag">AI·머신러닝</span>
+              <span class="tag">Python(기초)</span>
+            </div>
+          </div>
+
+          <!-- 스킬 카테고리: Business -->
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">Business</h3>
+            <div class="tag-group">
+              <span class="tag">사업계획서 작성</span>
+              <span class="tag">비용구조 설계</span>
+              <span class="tag">마케팅·펀딩 전략</span>
+              <span class="tag">B2G 전환</span>
+            </div>
+          </div>
+
+          <!-- 스킬 카테고리: UX·Design -->
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">UX·Design</h3>
+            <div class="tag-group">
+              <span class="tag">사용자 여정 설계</span>
+              <span class="tag">UX 개선</span>
+              <span class="tag">온보딩 플로우</span>
+              <span class="tag">UI 프로토타입</span>
+            </div>
+          </div>
+
+          <!-- 스킬 카테고리: Communication -->
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">Communication</h3>
+            <div class="tag-group">
+              <span class="tag">프로젝트 관리</span>
+              <span class="tag">팀 리딩</span>
+              <span class="tag">고객 인터뷰</span>
+              <span class="tag">프레젠테이션</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Language 섹션 (부가) ===== -->
+    <section class="section" id="language">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Language</span>
+          <h2 class="section__title">언어 능력</h2>
+        </div>
+
+        <div class="language-list">
+          <article class="language-card reveal">
+            <span class="language-card__period">2006.06 – 2007.08</span>
+            <h3 class="language-card__title">미국 Michigan, Lansing 유학</h3>
+            <p class="language-card__desc">현지 문화·사회 체험 — 영어 회화·청취 능력 향상</p>
+          </article>
+
+          <article class="language-card reveal">
+            <span class="language-card__period">2024.11</span>
+            <h3 class="language-card__title">TOEIC 915점</h3>
+            <p class="language-card__desc">비즈니스 영어 커뮤니케이션 가능</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact 섹션 ===== -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Contact</span>
+          <h2 class="section__title">함께 일해요</h2>
+        </div>
+
+        <blockquote class="contact-cta reveal">
+          <p>새로운 도전이 있다면 언제든 연락 주세요. 함께 가치를 설계해 나가겠습니다.</p>
+        </blockquote>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== 챗봇 위젯 ===== -->
+  <div class="chatbot" id="chatbot">
+    <!-- 플로팅 열기 버튼 -->
+    <button type="button" class="chatbot__fab" id="chatbotFab" aria-label="챗봇 열기">
+      <i class="fa-solid fa-comment-dots chatbot__fab-icon chatbot__fab-icon--open"></i>
+      <i class="fa-solid fa-xmark chatbot__fab-icon chatbot__fab-icon--close"></i>
+    </button>
+
+    <!-- 채팅 패널 -->
+    <div class="chatbot__panel" id="chatbotPanel" aria-hidden="true">
+      <div class="chatbot__header">
+        <div class="chatbot__header-info">
+          <span class="chatbot__title">백준 AI 비서</span>
+          <span class="chatbot__status">온라인</span>
+        </div>
+        <button type="button" class="chatbot__close" id="chatbotClose" aria-label="챗봇 닫기">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+
+      <!-- 메시지 목록 -->
+      <div class="chatbot__messages" id="chatbotMessages">
+        <div class="chatbot__message chatbot__message--bot">
+          <p>안녕하세요! 백준의 AI 비서예요. 경력이나 프로젝트에 대해 궁금한 점을 편하게 물어보세요.</p>
+        </div>
+      </div>
+
+      <!-- 로딩 표시 -->
+      <div class="chatbot__loading" id="chatbotLoading" hidden>
+        <span class="chatbot__dot"></span>
+        <span class="chatbot__dot"></span>
+        <span class="chatbot__dot"></span>
+      </div>
+
+      <!-- 입력 영역 -->
+      <form class="chatbot__input-area" id="chatbotForm">
+        <input
+          type="text"
+          class="chatbot__input"
+          id="chatbotInput"
+          placeholder="메시지를 입력하세요..."
+          autocomplete="off"
+          maxlength="500"
+        >
+        <button type="submit" class="chatbot__send" id="chatbotSend" aria-label="메시지 전송">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== 푸터 ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 백준. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- 스크립트 연결 -->
+  <script src="script.js"></script>
+</body>
+</html>
